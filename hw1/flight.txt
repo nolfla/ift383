@@ -1,0 +1,8 @@
+Flight#   Airline  Depart  Arrive  Day
+------------------------------------------
+
+62876       GE      NYC     ONT  THURSDAY
+30118      LOGI     ONT     PHX   FRIDAY
+12033       F       LAX     PHX   MONDAY
+40990      ACTI     PHX     ONT   MONDAY
+92377       EA      ONT     PHX   SUNDAY

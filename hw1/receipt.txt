@@ -1,0 +1,25 @@
+Burrito Shack
+
+ 5663 S Power Rd, Mesa, AZ 85212
+
+        (480) 988-6017
+
+
+
++ Thw Works Burrito        $10.00
+
++ Drink                      1.50
+
+  ASU discount             -2.00
+
+  TAX (7.5%)                 0.72
+
+  TOTAL                     10.22
+
+-----------------------------------
+
+  CASH                     $20.00
+
+  CHANGE DUE                $9.78
+
+           THANK-YOU!
