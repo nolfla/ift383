@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+open (ASSIGNMENTS, "data.csv");
+
+while ($record = <ASSIGNMENTS>) {
+   print $record;
+}
+
+close(ASSIGNMENTS);
