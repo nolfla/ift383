@@ -1,0 +1,115 @@
+#!/usr/bin/perl
+
+use Switch;
+
+#minimum variables initialized to 100
+$FinalMin = 100;
+$SurveyMin = 100;
+$H01Min = 100;
+$H02Min = 100;
+$H03Min = 100;
+$H04Min = 100;
+$H05Min = 100;
+$H06Min = 100;
+$H07Min = 100;
+$L01Min = 100;
+$L02Min = 100;
+$L03Min = 100;
+$L04Min = 100;
+$L05Min = 100;
+$L06Min = 100;
+$L07Min = 100;
+$Q01Min = 100;
+$Q02Min = 100;
+$Q03Min = 100;
+$Q04Min = 100;
+$Q05Min = 100;
+$Q06Min = 100;
+$Q07Min = 100;
+$FS = ',';
+print "Name\tLow\tHigh\tAverage";
+
+
+#finds maximum number
+sub findMax($num1, $num2) {
+    if ($num1 > $num2) {
+        return $num1;
+    }
+    else
+        return $num2;
+}
+
+#finds minimum number
+sub findMin($num1, $num2) {
+    if ($num1 < $num2) {
+        return $num1;
+    }
+    else
+        return $num2;
+}
+
+#calculates average
+sub calulateAvg(arr) {
+    $count=0;
+    $total=0;
+
+for (element in arr) {
+        count++;
+        total+=element;
+    }
+    return total/count;
+}
+
+
+
+while(<>)
+
+{
+@myArr = split(,/,$_);
+
+switch(myArr{2})
+{
+    case "H01"
+    {
+     $H01Max=findMax($4, $H01Max);
+        $H01Min=findMin($4, $H01Min);
+    }
+
+    case "H02"
+    {
+     $H02Max=findMax($4, $H02Max);
+        $H02Min=findMin($4, $H02Min);
+    }
+
+    case "H03"
+    {
+     $H03Max=findMax($4, $H03Max);
+        $H03Min=findMin($4, $H03Min);
+    }
+
+    case "H04"
+    {
+     $H04Max=findMax($4, $H04Max);
+        $H04Min=findMin($4, $H04Min);
+    }
+
+    case "H05"
+    {
+     $H05Max=findMax($4, $H05Max);
+        $H05Min=findMin($4, $H05Min);
+    }
+
+    case "H06"
+    {
+     $H06Max=findMax($4, $H06Max);
+        $H06Min=findMin($4, $H06Min);
+    }
+
+    case "H07"
+    {
+     $H07Max=findMax($4, $H07Max);
+        $H07Min=findMin($4, $H07Min);
+    }
+}
+
+}
