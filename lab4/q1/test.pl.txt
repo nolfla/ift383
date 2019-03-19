@@ -26,90 +26,94 @@ $Q04Min = 100;
 $Q05Min = 100;
 $Q06Min = 100;
 $Q07Min = 100;
-$FS = ',';
+#$FS = ',';
 print "Name\tLow\tHigh\tAverage";
-
-
-#finds maximum number
-sub findMax($num1, $num2) {
-    if ($num1 > $num2) {
-        return $num1;
-    }
-    else
-        return $num2;
-}
-
-#finds minimum number
-sub findMin($num1, $num2) {
-    if ($num1 < $num2) {
-        return $num1;
-    }
-    else
-        return $num2;
-}
-
-#calculates average
-sub calulateAvg(arr) {
-    $count=0;
-    $total=0;
-
-for (element in arr) {
-        count++;
-        total+=element;
-    }
-    return total/count;
-}
 
 
 
 while(<>)
 
 {
-@myArr = split(,/,$_);
+@myArr = split(/,/,$_);
 
-switch(myArr{2})
+sub Function { }
+
+Function(\$s);
+Function(\@a);
+#Function(\%h);
+
+#finds maximum number
+sub findMax($num1, $num2) {
+    $num1 = @myArr[3];
+    $num2 = @myArr[3];
+
+    if ($num1 > $num2) {
+        return $num1;
+    }
+    else
+{
+        return $num2;
+}
+}
+
+#finds minimum number
+sub findMin($num1, $num2) {
+    $num1 = @myArr[3];
+    $num2 = @myArr[3];
+
+    if ($num1 < $num2) {
+        return $num1;
+    }
+    else
+{
+       return $num2;
+}
+}
+switch(@myArr[2])
 {
     case "H01"
     {
-     $H01Max=findMax($4, $H01Max);
-        $H01Min=findMin($4, $H01Min);
+     $H01Max=findMax(@myArr[3], $H01Max);
+        $H01Min=findMin(@myArr[3], $H01Min);
     }
 
     case "H02"
     {
-     $H02Max=findMax($4, $H02Max);
-        $H02Min=findMin($4, $H02Min);
+     $H02Max=findMax(@myArr[3], $H02Max);
+        $H02Min=findMin(@myArr[3], $H02Min);
     }
 
     case "H03"
     {
-     $H03Max=findMax($4, $H03Max);
-        $H03Min=findMin($4, $H03Min);
+     $H03Max=findMax(@myArr[3], $H03Max);
+        $H03Min=findMin(@myArr[3], $H03Min);
     }
 
     case "H04"
     {
-     $H04Max=findMax($4, $H04Max);
-        $H04Min=findMin($4, $H04Min);
+     $H04Max=findMax(@myArr[3], $H04Max);
+        $H04Min=findMin(@myArr[3], $H04Min);
     }
 
     case "H05"
     {
-     $H05Max=findMax($4, $H05Max);
-        $H05Min=findMin($4, $H05Min);
+     $H05Max=findMax(@myArr[3], $H05Max);
+        $H05Min=findMin(@myArr[3], $H05Min);
     }
 
     case "H06"
     {
-     $H06Max=findMax($4, $H06Max);
-        $H06Min=findMin($4, $H06Min);
+     $H06Max=findMax(@myArr[3], $H06Max);
+        $H06Min=findMin(@myArr[3], $H06Min);
     }
 
     case "H07"
     {
-     $H07Max=findMax($4, $H07Max);
-        $H07Min=findMin($4, $H07Min);
+     $H07Max=findMax(@myArr[3], $H07Max);
+        $H07Min=findMin(@myArr[3], $H07Min);
     }
 }
 
 }
+
+#finds minimum number
